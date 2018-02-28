@@ -139,7 +139,8 @@
       }
       img[alt=MicroServices] { margin-right: 20px; width: 380px; }
       img[alt=AusyLogo] { margin-bottom: 40px; width: 300px; }
-      img[alt=BigPicture] { width: 750px; }
+      img[alt=MicroServices2] { width: 750px; }
+      img[alt=XXXAsAServices] { width: 750px; }
     </style>
   </head>
   <body>
@@ -169,10 +170,26 @@ class: center, middle, inverse
 # Infrastructure microservices (rappels)
 ---
 layout: false
+template: mixed
+## Infrastructure microservices (rappels)
+![MicroServices2](images/microservices2.png)
+.right[[source](https://dzone.com/articles/what-are-microservices-actually)]
 ---
+template: inverse
+# XXX As A Service
+---
+template: mixed
+## XXX As A Service
+![XXXAsAServices](images/xxxasaservice.jpeg)
+.right[[source](https://medium.com/@pkerrison/pizza-as-a-service-2-0-5085cd4c365e)]
+---
+template: inverse
 # Twelve Factors
 ---
 template: mixed
+## Twelve Factors
+![TwelveFactors](images/twelvefactors.jpg)
+.right[[source](https://www.slideshare.net/jkutner/12-factorsv3)]
 ---
 template: inverse
 # Avantages d'une infrastructure microservices
@@ -278,6 +295,14 @@ template: inverse
 * ### Maitrise de l'effort
 ---
 template: inverse
+# Les patterns gagnants : Immutable Infrastructure
+---
+## Les patterns gagnants : Immutable Infrastructure
+* ### Pets vs Cattle
+* ### Standardized deployments
+* ### Beware of uptime
+---
+template: inverse
 # Les patterns gagnants : Zero Downtime Deployment
 ---
 ## Les patterns gagnants : Zero Downtime Deployment
@@ -290,17 +315,12 @@ template: inverse
 # Les patterns gagnants : Design For Failure
 ---
 ## Les patterns gagnants : Design For Failure
-* ### 
-* ### 
-* ### 
----
-template: inverse
-# Les patterns gagnants : Immutable Infrastructure
----
-## Les patterns gagnants : Immutable Infrastructure
-* ### 
-* ### 
-* ### 
+* ### Redondance
+####   --> Machines physiques, instances, availability-zones, regions, ...
+* ### Résilience
+####   --> Eventual consistency / Graceful degradation
+* ### Mise à l'épreuve
+####   --> Chaos Monkey
 ---
 name: last-page
 template: inverse
