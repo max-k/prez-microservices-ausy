@@ -139,20 +139,20 @@
       }
       img[alt=MicroServices] { margin-right: 20px; width: 380px; }
       img[alt=AusyLogo] { margin-bottom: 40px; width: 300px; }
-      img[alt=HashicorpTools] { width: 750px; }
-      img[alt=TerraformLogo] { width: 750px; }
-      img[alt=TerraformVertical] { margin-top: 30px; width: 250px; }
-      img[alt=TerraformVertical2] { margin-top: 16px; width: 250px; }
-      img[alt=Screenshot] { width: 750px; }
-      img[alt=Plan] { width: 750px; }
-      img[alt=Plan1] { width: 750px; }
-      img[alt=Plan2] { width: 750px; }
-      img[alt=Providers] { width: 750px; }
+      img[alt=BigPicture] { width: 750px; }
     </style>
   </head>
   <body>
     <textarea id="source">
-name: centered
+name: middle
+layout: true
+class: middle
+---
+name: center
+layout: true
+class: center
+---
+name: mixed
 layout: true
 class: center, middle
 ---
@@ -166,7 +166,141 @@ class: center, middle, inverse
 ### by [Thomas Sarboni](mailto:max-k@post.com)
 .footnote[[Ausy](http://www.ausy.fr) 2018]
 ---
-
+# Infrastructure microservices (rappels)
+---
+layout: false
+---
+# Twelve Factors
+---
+template: mixed
+---
+template: inverse
+# Avantages d'une infrastructure microservices
+---
+## Avantages d'une infrastructure microservices
+* ### Architecture distribuée
+* ### Indépendance des composants
+* ### Plateforme agile
+* ### Composants réutilisables
+* ### Cartographie possible
+---
+template: inverse
+# Les valeurs : Simplicité
+---
+## Les valeurs : Simplicité
+* ### Utilisation de standards
+* ### Do not code what you can buy
+* ### Interfaces descriptives
+---
+template: inverse
+# Les valeurs : Reproductibilité
+---
+## Les valeurs : Reproductibilité
+* ### Appropriation des artefacts
+* ### Maitrise de toutes les couches
+* ### Utilisation de versions statiques
+---
+template: inverse
+# Les valeurs : Sémantique
+---
+## Les valeurs : Sémantique
+* ### Conventions de nommage
+* ### Proximité fonctionnelle (usage/valeur)
+---
+template: inverse
+# Les valeurs : Observabilité
+---
+## Les valeurs : Observabilité
+* ### Monitoring / Métrologie
+* ### Instrumentation
+* ### Traçabilité / Analyse de performances
+* ### Simulation (end to end)
+* ### Prédiction (latence, erreurs, taux de requêtes)
+---
+template: inverse
+# Facteur clé de succès : Everything as code
+---
+## Facteur clé de succès : Everything as code
+* ### Tests
+* ### Pipelines
+* ### Documentation
+* ### Infrastructure
+---
+template: inverse
+# Facteur clé de succès : Automatisation des workflows
+---
+## Facteur clé de succès : Automatisation des workflows
+* ### Tests
+* ### Intégration
+* ### Déploiement
+* ### Automation manuelle (ChatOps ?)
+---
+template: inverse
+# Facteur clé de succès : Infrastructure pilotable
+---
+## Facteur clé de succès : Infrastructure pilotable
+* ### Machines (MAAS / Cloud)
+* ### Réseau (API / SDN)
+* ### Stockage (Plugins / API / ObjectStorage)
+---
+template: inverse
+# Ecueils à éviter
+---
+## Ecueils à éviter
+* ### Instabilité des interfaces
+* ### Sur-spécialisation des composants
+* ### Sur-complexité 
+---
+template: inverse
+# Enjeux culturels et organisationnels : Collaboration
+---
+## Enjeux culturels et organisationnels : Collaboration
+* ### Pizza Teams
+* ### Pair programming
+* ### Code Review
+* ### Démos
+---
+template: inverse
+# Enjeux culturels et organisationnels : Management
+---
+## Enjeux culturels et organisationnels : Management
+* ### Liberté créative / Autonomisation
+####   --> Transparence, transmission des valeurs business
+* ### Responsabilisation
+####   --> You build it, you run it!
+---
+template: inverse
+# Les patterns gagnants : MVP
+---
+## Les patterns gagnants : MVP
+* ### Reduction du TTM
+* ### Approche itérative
+* ### Maitrise de l'effort
+---
+template: inverse
+# Les patterns gagnants : Zero Downtime Deployment
+---
+## Les patterns gagnants : Zero Downtime Deployment
+* ### A/B Testing
+* ### Blue/Green Deployment
+* ### Canary Release
+* ### Dark Launch
+---
+template: inverse
+# Les patterns gagnants : Design For Failure
+---
+## Les patterns gagnants : Design For Failure
+* ### 
+* ### 
+* ### 
+---
+template: inverse
+# Les patterns gagnants : Immutable Infrastructure
+---
+## Les patterns gagnants : Immutable Infrastructure
+* ### 
+* ### 
+* ### 
 ---
 name: last-page
 template: inverse
