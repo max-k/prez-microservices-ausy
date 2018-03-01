@@ -135,12 +135,18 @@
       .right-column2 {
         width: 55%;
         float: right;
-        padding-top: 1em;
       }
       img[alt=MicroServices] { margin-right: 20px; width: 380px; }
       img[alt=AusyLogo] { margin-bottom: 40px; width: 300px; }
       img[alt=MicroServices2] { width: 750px; }
       img[alt=XXXAsAServices] { width: 750px; }
+      img[alt=Bus] { width: 750px; }
+      img[alt=Reproductibility] { width: 650px; }
+      img[alt=Observability] { width: 460px; }
+      img[alt=InfraAsCode] { width: 640px; }
+      img[alt=Integration] { width: 640px; }
+      img[alt=Hubot] { width: 460px; }
+      img[alt=AsAServices] { width: 780px; }
     </style>
   </head>
   <body>
@@ -167,6 +173,22 @@ class: center, middle, inverse
 ### by [Thomas Sarboni](mailto:max-k@post.com)
 .footnote[[Ausy](http://www.ausy.fr) 2018]
 ---
+# Sommaire
+.left-column2[
+## Première partie
+1. ### Principes généraux
+2. ### Principax avantages
+3. ### Valeurs
+4. ### Facteurs clés de succès
+]
+.right-column2[
+## Seconde partie
+1. ### Bus et microservices
+2. ### Ecueils à éviter
+3. ### Enjeux organisationnels
+4. ### Les patterns gagnants
+]
+---
 # Infrastructure microservices (rappels)
 ---
 layout: false
@@ -177,24 +199,32 @@ template: mixed
 ---
 template: inverse
 # XXX As A Service
+![AsAServices](images/asaservice.png)
+.right[[source]()]
 ---
 template: mixed
 ## XXX As A Service
-![XXXAsAServices](images/xxxasaservice.jpeg)
-.right[[source](https://medium.com/@pkerrison/pizza-as-a-service-2-0-5085cd4c365e)]
+![XXXAsAServices](images/xxxasaservice.png)
+.right[[source](http://trapptechnology.com/cloud-stack/)]
 ---
 template: inverse
 # Twelve Factors
----
-template: mixed
-## Twelve Factors
 ![TwelveFactors](images/twelvefactors.jpg)
 .right[[source](https://www.slideshare.net/jkutner/12-factorsv3)]
 ---
-template: inverse
-# Avantages d'une infrastructure microservices
+layout: false
+## Twelve Factors
+* ### Formalisés par Heroku
+* ### Pré-requis indispensables à une infra microservices
+* ### Chaque composant est indépendant
+* ### Chaque composant embarque tout ce qui lui est nécessaire
 ---
-## Avantages d'une infrastructure microservices
+template: inverse
+# Principaux avantages
+![UseMicroServices](images/microservices3.jpg)
+.right[[source](https://help.mypurecloud.com/articles/microservice/)]
+---
+## Principaux avantages
 * ### Architecture distribuée
 * ### Indépendance des composants
 * ### Plateforme agile
@@ -203,14 +233,20 @@ template: inverse
 ---
 template: inverse
 # Les valeurs : Simplicité
+![Simplicity](images/puzzle.png)
+.right[[source](http://blog.soat.fr/2017/07/pourquoi-et-sous-quel-condition-utiliser-les-microservices/)]
 ---
 ## Les valeurs : Simplicité
 * ### Utilisation de standards
+#### --> Protocoles, formats, design patterns
 * ### Do not code what you can buy
 * ### Interfaces descriptives
+#### --> hateoas, OpenAPI, JsonAPI, ...
 ---
 template: inverse
 # Les valeurs : Reproductibilité
+![Reproductibility](images/idempotent.jpg)
+.right[[source](http://geek-and-poke.com/geekandpoke/2016/1/10/idempotent-and-non-idempotent)]
 ---
 ## Les valeurs : Reproductibilité
 * ### Appropriation des artefacts
@@ -219,6 +255,8 @@ template: inverse
 ---
 template: inverse
 # Les valeurs : Sémantique
+![Fonctionnel](images/fonctionnel.png)
+.right[[source](https://www.qualitefacile.com/2017/12/analyse-fonctionnelle.html)]
 ---
 ## Les valeurs : Sémantique
 * ### Conventions de nommage
@@ -226,16 +264,28 @@ template: inverse
 ---
 template: inverse
 # Les valeurs : Observabilité
+![WhatObservability](images/what-is-observability.png)
+.right[[source](https://blog.newrelic.com/2017/12/07/observability-instrumentation/)]
 ---
 ## Les valeurs : Observabilité
+.left-column2[
 * ### Monitoring / Métrologie
 * ### Instrumentation
 * ### Traçabilité / Analyse de performances
-* ### Simulation (end to end)
-* ### Prédiction (latence, erreurs, taux de requêtes)
+* ### Simulation
+#### --> Tests end to end, ...
+* ### Prédiction
+#### --> Latence, erreurs, taux de requêtes, ...
+]
+.right-column2[
+![Observability](images/wc-observability.png)
+.right[[source](https://www.weave.works/technologies/monitoring-kubernetes-with-prometheus/)]
+]
 ---
 template: inverse
 # Facteur clé de succès : Everything as code
+![InfraAsCode](images/single-definition-for-multiple-environments.png)
+.right[[source](http://infrastructure-as-code.com/)]
 ---
 ## Facteur clé de succès : Everything as code
 * ### Tests
@@ -245,15 +295,25 @@ template: inverse
 ---
 template: inverse
 # Facteur clé de succès : Automatisation des workflows
+![Integration](images/CI-in-devOps.jpg)
+.right[[source](http://www.anarsolutions.com/making-ci-effective-size-organization/)]
 ---
 ## Facteur clé de succès : Automatisation des workflows
+.left-column2[
 * ### Tests
 * ### Intégration
 * ### Déploiement
 * ### Automation manuelle (ChatOps ?)
+]
+.right-column2[
+![Hubot](images/hubot.jpg)
+.right[[source](https://octodex.github.com/hubot)]
+]
 ---
 template: inverse
 # Facteur clé de succès : Infrastructure pilotable
+![Pilotable](images/)
+.right[[source]()]
 ---
 ## Facteur clé de succès : Infrastructure pilotable
 * ### Machines (MAAS / Cloud)
@@ -262,6 +322,8 @@ template: inverse
 ---
 template: inverse
 # Ecueils à éviter
+![Ecueils](images/)
+.right[[source]()]
 ---
 ## Ecueils à éviter
 * ### Instabilité des interfaces
@@ -269,18 +331,34 @@ template: inverse
 * ### Sur-complexité 
 ---
 template: inverse
-# Enjeux culturels et organisationnels : Collaboration
+# Bus et microservices
+![Bus](images/bus.png)
+.right[[source](https://blog.byndyusoft.com/useful-tools-for-managing-complexity-of-microservice-architecture-109a2289acc)]
 ---
-## Enjeux culturels et organisationnels : Collaboration
+## Bus et microservices
+* ### Rationalisation des échanges
+* ### Standard de-facto
+* ### Fiabilité
+* ### Résiliance
+* ### Scalabilité
+---
+template: inverse
+# Enjeux organisationnels : Collaboration
+![Collaboration](images/)
+.right[[source]()]
+---
+## Enjeux organisationnels : Collaboration
 * ### Pizza Teams
 * ### Pair programming
 * ### Code Review
 * ### Démos
 ---
 template: inverse
-# Enjeux culturels et organisationnels : Management
+# Enjeux organisationnels : Management
+![Management](images/)
+.right[[source]()]
 ---
-## Enjeux culturels et organisationnels : Management
+## Enjeux organisationnels : Management
 * ### Liberté créative / Autonomisation
 ####   --> Transparence, transmission des valeurs business
 * ### Responsabilisation
@@ -288,6 +366,8 @@ template: inverse
 ---
 template: inverse
 # Les patterns gagnants : MVP
+![MVP](images/)
+.right[[source]()]
 ---
 ## Les patterns gagnants : MVP
 * ### Reduction du TTM
@@ -296,6 +376,8 @@ template: inverse
 ---
 template: inverse
 # Les patterns gagnants : Immutable Infrastructure
+![Immutable](images/)
+.right[[source]()]
 ---
 ## Les patterns gagnants : Immutable Infrastructure
 * ### Pets vs Cattle
@@ -304,6 +386,8 @@ template: inverse
 ---
 template: inverse
 # Les patterns gagnants : Zero Downtime Deployment
+![ZDD](images/)
+.right[[source]()]
 ---
 ## Les patterns gagnants : Zero Downtime Deployment
 * ### A/B Testing
@@ -313,6 +397,8 @@ template: inverse
 ---
 template: inverse
 # Les patterns gagnants : Design For Failure
+![DesignForFailure](images/)
+.right[[source]()]
 ---
 ## Les patterns gagnants : Design For Failure
 * ### Redondance
