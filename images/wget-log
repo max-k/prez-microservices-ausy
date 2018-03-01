@@ -1,0 +1,12 @@
+--2018-03-01 08:56:36--  https://clouda-assets.s3.amazonaws.com/upload/555bc6bbd287c241508839f9.jpg?versionId=vV0dP8wOhcsOb9ChGdJxLrDukifs.NmV
+Certificat de l’autorité de certification « /etc/ssl/certs/ca-certificates.crt » chargé
+Résolution de clouda-assets.s3.amazonaws.com (clouda-assets.s3.amazonaws.com)… 52.216.21.243
+Connexion à clouda-assets.s3.amazonaws.com (clouda-assets.s3.amazonaws.com)|52.216.21.243|:443… connecté.
+requête HTTP transmise, en attente de la réponse… 200 OK
+Taille : 26024 (25K) [image/jpeg]
+Sauvegarde en : « 555bc6bbd287c241508839f9.jpg?versionId=vV0dP8wOhcsOb9ChGdJxLrDukifs.NmV »
+
+          555bc6bbd2   0%[                       ]       0  --.-KB/s               555bc6bbd287c2415088 100%[======================>]  25,41K  --.-KB/s    ds 0,1s    
+
+2018-03-01 08:56:37 (229 KB/s) — « 555bc6bbd287c241508839f9.jpg?versionId=vV0dP8wOhcsOb9ChGdJxLrDukifs.NmV » sauvegardé [26024/26024]
+

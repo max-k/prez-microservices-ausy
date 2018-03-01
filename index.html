@@ -147,6 +147,12 @@
       img[alt=Integration] { width: 640px; }
       img[alt=Hubot] { width: 460px; }
       img[alt=AsAServices] { width: 780px; }
+      img[alt=Ecueils] { margin-left: 110px; width: 460px; }
+      img[alt=Kafka] { margin-top: 80px; width: 450px; }
+      img[alt=Collaboration2] { width: 460px; }
+      img[alt=Immutable] { width: 550px; }
+      img[alt=ZDD] { width: 550px; }
+      img[alt=ZDD2] { width: 750px; }
     </style>
   </head>
   <body>
@@ -312,23 +318,27 @@ template: inverse
 ---
 template: inverse
 # Facteur clé de succès : Infrastructure pilotable
-![Pilotable](images/)
-.right[[source]()]
+![Pilotable](images/openstack-sm.png)
+.right[[source](https://www.informatiquenews.fr/red-hat-openstack-plate-forme-version-6-les-serveurs-absorbent-les-reseaux-30488)]
 ---
 ## Facteur clé de succès : Infrastructure pilotable
 * ### Machines (MAAS / Cloud)
 * ### Réseau (API / SDN)
 * ### Stockage (Plugins / API / ObjectStorage)
+![Pilotable2](images/sdn.png)
+.right[[source](https://commsbusiness.co.uk/features/software-defined-networking-sdn-explained/)]
 ---
 template: inverse
 # Ecueils à éviter
-![Ecueils](images/)
-.right[[source]()]
+![Ecueils2](images/dependencies.jpg)
+.right[[source](https://www.slideshare.net/aahoogendoorn/20141222-growing-a-microservices-landscape-with-smart-use-cases)]
 ---
 ## Ecueils à éviter
 * ### Instabilité des interfaces
 * ### Sur-spécialisation des composants
 * ### Sur-complexité 
+![Ecueils](images/complexity.jpg)
+.right[[source](https://jaxenter.com/deploying-microservice-how-to-handle-complexity-122336.html)]
 ---
 template: inverse
 # Bus et microservices
@@ -336,27 +346,39 @@ template: inverse
 .right[[source](https://blog.byndyusoft.com/useful-tools-for-managing-complexity-of-microservice-architecture-109a2289acc)]
 ---
 ## Bus et microservices
+.left-column2[
 * ### Rationalisation des échanges
 * ### Standard de-facto
 * ### Fiabilité
 * ### Résiliance
 * ### Scalabilité
+]
+.right-column2[
+![Kafka](images/kafka.png)
+.right[[source](https://www.cloudera.com/documentation/kafka/1-2-x/topics/kafka.html)]
+]
 ---
 template: inverse
 # Enjeux organisationnels : Collaboration
-![Collaboration](images/)
-.right[[source]()]
+![Collaboration](images/confusion_wall.jpg)
+.right[[source](http://www.slideshare.net/buzdin/introduction-to-devops)]
 ---
 ## Enjeux organisationnels : Collaboration
-* ### Pizza Teams
+.left-column2[
+* ### Feature teams
 * ### Pair programming
 * ### Code Review
 * ### Démos
+]
+.right-column2[
+![Collaboration2](images/cooperation-png-10325.png)
+.right[[source](http://www.freeiconspng.com/free-images/cooperation-png-10325)]
+]
 ---
 template: inverse
 # Enjeux organisationnels : Management
-![Management](images/)
-.right[[source]()]
+![Management](images/ensemble.jpg)
+.right[[source](https://www.digischool.fr/etudes-sup/bts/sujet-management-entreprises-bts-2015-28259.html)]
 ---
 ## Enjeux organisationnels : Management
 * ### Liberté créative / Autonomisation
@@ -366,28 +388,36 @@ template: inverse
 ---
 template: inverse
 # Les patterns gagnants : MVP
-![MVP](images/)
-.right[[source]()]
+![MVP](images/mvp.jpg)
+.right[[source](https://www.definitions-marketing.com/definition/mvp/)]
 ---
 ## Les patterns gagnants : MVP
+.left-column2[
 * ### Reduction du TTM
 * ### Approche itérative
 * ### Maitrise de l'effort
+]
+.right-column2[
+![MVP](images/BuildMeasureLearn.jpg)
+.right[[source](https://www.interaction-design.org/literature/article/minimum-viable-product-mvp-and-design-balancing-risk-to-gain-reward)]
+]
 ---
 template: inverse
 # Les patterns gagnants : Immutable Infrastructure
-![Immutable](images/)
-.right[[source]()]
+![Immutable](images/immutable.jpg)
+.right[[source](https://www.slideshare.net/Larsstling/immutable-infrastructure-52179433)]
 ---
 ## Les patterns gagnants : Immutable Infrastructure
 * ### Pets vs Cattle
 * ### Standardized deployments
 * ### Beware of uptime
+![Cattle](images/cattle.jpg)
+.right[[source](https://www.slideshare.net/randybias/the-history-of-pets-vs-cattle-and-using-it-properly)]
 ---
 template: inverse
 # Les patterns gagnants : Zero Downtime Deployment
-![ZDD](images/)
-.right[[source]()]
+![ZDD](images/versions.png)
+.right[[source](https://blog.octo.com/versionning-dapi-zero-downtime-deployment-et-migration-sql-theorie-et-cas-pratique/)]
 ---
 ## Les patterns gagnants : Zero Downtime Deployment
 * ### A/B Testing
@@ -395,10 +425,14 @@ template: inverse
 * ### Canary Release
 * ### Dark Launch
 ---
+## Les patterns gagnants : Zero Downtime Deployment
+![ZDD2](images/Blue-Green-mise-en-oeuvre.png)
+.right[[source](https://blog.octo.com/zero-downtime-deployment/)]
+---
 template: inverse
 # Les patterns gagnants : Design For Failure
-![DesignForFailure](images/)
-.right[[source]()]
+![DesignForFailure](images/failure.jpg)
+.right[[source](https://cloudacademy.com/course/how-to-architect-with-a-design-for-failure-approach/)]
 ---
 ## Les patterns gagnants : Design For Failure
 * ### Redondance
